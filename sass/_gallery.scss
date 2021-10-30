@@ -1,0 +1,48 @@
+.gallery {
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 10rem 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin: 8rem 0;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.2s;
+
+    &:hover {
+      filter: brightness(50%);
+    }
+  }
+
+  &__heading {
+    text-align: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 8rem;
+      height: 5px;
+      margin: 0 auto;
+      background-color: currentColor;
+    }
+
+    @media only screen and(max-width:18.75em) {
+      font-size: 3rem !important;
+    }
+  }
+}

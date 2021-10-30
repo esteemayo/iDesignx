@@ -1,0 +1,52 @@
+.seenon {
+  background-color: var(--color-white);
+  grid-column: center-start / center-end;
+  margin-top: -14rem;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: full-start / full-end;
+    margin: 5rem;
+    margin-bottom: -5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 2vw;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--color--blue);
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    column-gap: 3rem;
+
+    img {
+      max-height: 5rem;
+      max-width: 100%;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}

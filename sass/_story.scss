@@ -1,0 +1,150 @@
+.story {
+  &__details {
+    grid-column: col-start 1 / col-end 4;
+    margin: 10rem 0;
+    padding: 4.5rem;
+
+    @media only screen and (max-width: 68.75em) {
+      margin: 25rem 0;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 4 / 5;
+      grid-column: center-start / center-end;
+      margin: 8rem 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 4rem 0;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      grid-column: full-start / full-end;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin: 2.5rem 0;
+      padding: 3.5rem;
+    }
+
+    display: grid;
+    align-content: center;
+  }
+
+  &__heading {
+    font-style: italic !important;
+    color: inherit !important;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3.5rem !important;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 3rem !important;
+    }
+  }
+
+  &__text {
+    font-size: var(--default-font-size);
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+    }
+  }
+
+  &__pictures {
+    grid-column: col-start 5 / full-end;
+    margin-top: 10rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-row: 5 / 6;
+      grid-column: center-start / center-end;
+
+      margin-top: 0;
+
+      grid-template-rows: repeat(10, 1fr);
+      grid-template-columns: repeat(15, 1fr);
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      grid-column: full-start / full-end;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    z-index: 10;
+    outline-offset: 2rem;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-large) {
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+    }
+
+    &:hover {
+      outline: 1.5rem solid var(--color-pink-light);
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+    }
+
+    &--1 {
+      grid-row: 3 / span 5;
+      grid-column: 2 / span 5;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-row: 2 / span 6;
+
+        transform: scale(1.3);
+      }
+    }
+
+    &--2 {
+      grid-row: 5 / span 5;
+      grid-column: 3 / span 5;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-row: 4 / -1;
+        grid-column: 6 / span 5;
+
+        transform: scale(1.2);
+      }
+    }
+
+    &--3 {
+      grid-row: 2 / span 5;
+      grid-column: 5 / span 5;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-row: 2 / span 6;
+        grid-column: 10 / span 5;
+
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  &__pictures:hover &__img:not(:hover) {
+    transform: scale(0.95);
+  }
+}

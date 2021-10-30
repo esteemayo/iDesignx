@@ -1,0 +1,118 @@
+.container-home {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 80vh repeat(5, min-content);
+  grid-template-columns:
+    [full-start]minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(2, min-content) 80vh repeat(6, min-content);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: repeat(2, min-content) 60vh;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: repeat(2, min-content) 40vh;
+  }
+}
+
+.container-prints {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 70vh repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start]repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(2, min-content) 60vh;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: repeat(2, min-content) 40vh;
+  }
+}
+
+.container-design {
+  background-color: #f9f9f9;
+
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 80vh 40vw repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: 64em) {
+    grid-template-rows: repeat(2, min-content) 50vh 40vw repeat(3, min-content);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: repeat(2, min-content) 45vh;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: repeat(2, min-content) 30vh;
+  }
+}
+
+.container-contact {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 60vh repeat(2, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: repeat(2, min-content) 60vh repeat(3, min-content);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(2, min-content) 40vh;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    grid-template-rows: repeat(2, min-content) 30vh;
+  }
+}
+
+.container-about {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 60vh 40vw min-content 20vw repeat(
+      2,
+      min-content
+    );
+  grid-template-columns:
+    [full-start]minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: repeat(2, min-content) 60vh min-content 30vw min-content 20vw repeat(
+        2,
+        min-content
+      );
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: repeat(2, min-content) 40vh min-content 30vw min-content 20vw;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: repeat(2, min-content) 30vh min-content 30vw min-content 20vw;
+  }
+}

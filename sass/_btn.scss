@@ -1,0 +1,38 @@
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-pink-dark),
+    var(--color-pink-light),
+    var(--color-orange-dark),
+    var(--color-orange-light)
+  );
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
+}
+
+.btn:focus {
+  outline: none;
+}

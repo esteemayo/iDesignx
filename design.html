@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>iDesignx | Design</title>
+  </head>
+  <body class="container-design">
+    <div class="info">
+      <div class="info__phone">
+        <svg class="info__icon">
+          <use xlink:href="img/sprite.svg#icon-phone"></use>
+        </svg>
+        +2348136119251
+      </div>
+      <div class="info__email">
+        <svg class="info__icon">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        esteemdesign19@gmail.com
+      </div>
+      <div class="info__logos">
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__logo-box">
+        <a href="/index.html" class="nav__logo-link">
+          <img src="img/logo.png" alt="Logo" class="nav__logo" />
+        </a>
+      </div>
+      <ul class="nav__item">
+        <li class="nav__list nav__list--active">
+          <a href="/index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="/design.html" class="nav__link">Design</a>
+        </li>
+        <li class="nav__list">
+          <a href="/prints.html" class="nav__link">Prints</a>
+        </li>
+        <li class="nav__list"><a href="#" class="nav__link">Gallery</a></li>
+        <li class="nav__list">
+          <a href="/about.html" class="nav__link">About</a>
+        </li>
+        <li class="nav__list">
+          <a href="/contact.html" class="nav__link">Contact</a>
+        </li>
+      </ul>
+      <button class="nav__btn">Upload your design</button>
+    </nav>
+
+    <header class="header__design">
+      <h1 class="heading-1 header__design-heading">Custom designs</h1>
+      <p class="header__design-text">
+        We offer you the easiest way to get your <br />
+        materials printed without breaking a sweat!
+      </p>
+    </header>
+
+    <section class="img-container">
+      <img src="img/woman-3.jpg" alt="Woman" />
+    </section>
+
+    <section class="custom">
+      <div class="custom__container">
+        <h2 class="heading-2 custom__heading">Custom designs</h2>
+
+        <p class="custom__text">
+          We are a Creative Design, Brand development and activation firm. We
+          aim to present brands in grand style. Focusing on each drop in a
+          massive rainfall is a way of life to us.
+        </p>
+
+        <p class="custom__text">
+          We treat every details with caution to set your brand in motion of
+          excellence.
+        </p>
+      </div>
+    </section>
+
+    <section class="request">
+      <h3 class="heading-3 request__heading mb-md">Fill in your requests</h3>
+
+      <form action="#" class="form">
+        <div class="form__group">
+          <input
+            id="name"
+            type="text"
+            class="form__input"
+            placeholder="Your Name"
+            required
+          />
+          <label for="name" class="form__label">Your Name</label>
+        </div>
+
+        <div class="form__group">
+          <input
+            id="email"
+            type="email"
+            class="form__input"
+            placeholder="Email"
+            required
+          />
+          <label for="email" class="form__label">Email</label>
+        </div>
+
+        <div class="form__group">
+          <input
+            id="phone"
+            type="tel"
+            class="form__input"
+            placeholder="Phone Number"
+            required
+          />
+          <label for="phone" class="form__label">Phone Number</label>
+        </div>
+
+        <div class="form__group">
+          <select name="category" id="category" class="form__select" required>
+            <option value="Select Category">Select Category</option>
+            <option value="Logo Design">Logo Design</option>
+            <option value="Branding">Branding</option>
+            <option value="Product Packaging">Product Packaging</option>
+            <option value="Corporate Gifts">Corporate Gifts</option>
+            <option value="Custom Shirts">Custom Shirts</option>
+            <option value="Stationery Materials">Stationery Materials</option>
+            <option value="Signage">Signage</option>
+            <option value="Canvas Prints">Canvas Prints</option>
+            <option value="Fliers & Media prints">Fliers & Media prints</option>
+            <option value="Posters">Posters</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <textarea
+            name="comment"
+            id="comment"
+            class="form__textarea"
+            placeholder="Comment Here"
+            required
+          ></textarea>
+          <label for="comment" class="form__label">Comment Here</label>
+        </div>
+
+        <div class="form__group form__photo-upload">
+          <input
+            id="file"
+            type="file"
+            class="form__upload"
+            placeholder="Attach a sample"
+            required
+          />
+          <label for="file">Attach a sample</label>
+        </div>
+
+        <button type="submit" class="form__btn">Send request</button>
+      </form>
+    </section>
+
+    <section class="design__contact">
+      <p class="design__contact-text">
+        Need a custom design and professional printing services?
+      </p>
+      <a href="#" class="btn design__contact-btn">Contact us</a>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a href="/about.html" class="footer__nav-link">About us</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Product</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Gallery</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Awards</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Help</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="/contact.html" class="footer__nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <p class="footer__copyright">
+        &copy; Copyright <span class="footer__copyright-year"></span> by
+        Emmanuel Adebayo. All rights reserved. We are a young company always
+        looking for new and creative ideas to help you with our products in your
+        everyday work.
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.querySelector('.footer__copyright-year').innerHTML = year;
+  </script>
+</html>

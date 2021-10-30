@@ -1,0 +1,166 @@
+.printings {
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(
+      rgba($color-gray-dark-2, 0.5),
+      rgba($color-gray-dark-2, 0.5)
+    ),
+    url(../img/woman-2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  padding: 7rem;
+
+  display: grid;
+  align-content: space-evenly;
+
+  @media only screen and (max-width: $bp-small) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    padding: 2rem;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
+    gap: 6rem;
+    margin: 5rem 0;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      justify-content: center;
+    }
+  }
+
+  &__header {
+    font-size: 3rem !important;
+    text-transform: none !important;
+    line-height: 1.1;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: center;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 2.5rem !important;
+    }
+
+    @media only screen and (max-width: 20em) {
+      font-size: 2.4rem !important;
+    }
+
+    @media only screen and (max-width: 18.75em) {
+      font-size: 2.3rem !important;
+    }
+
+    span {
+      display: block;
+
+      @media only screen and (max-width: 18.75em) {
+        display: inline;
+      }
+    }
+  }
+}
+
+.printing__card {
+  display: grid;
+  row-gap: 1.5rem;
+
+  padding: 3rem;
+  border-radius: 3px;
+  background-color: rgba($color-gray-light, 0.1);
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    padding: 2rem;
+  }
+
+  &-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: var(--color-white);
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: center;
+    }
+  }
+
+  &-header {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: center;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  &-text {
+    font-size: 1.8rem;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: center;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &-btn:link,
+  &-btn:visited {
+    justify-self: start;
+
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--color-white);
+    color: var(--color-gray-dark-2);
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      var(--color-gray-dark-2) 50%
+    );
+    background-size: 220%;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: center;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      padding: 1rem 1.2rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  &-btn:hover,
+  &-btn:active {
+    color: var(--color-white);
+    background-position: 100%;
+  }
+
+  &-btn:focus {
+    outline: none;
+  }
+}

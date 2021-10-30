@@ -1,0 +1,234 @@
+.location {
+  background-color: rgba(255, 218, 185, 0.5);
+  grid-column: col-start 5 / col-end 8;
+
+  margin: 15rem 0;
+  padding: 5rem;
+  line-height: 1.4;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-row: 5 / 6;
+    grid-column: center-start / center-end;
+
+    margin: 5rem 0;
+    border-radius: 1rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    grid-column: full-start / full-end;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 2rem;
+  }
+
+  &__address {
+    margin-bottom: 3rem;
+
+    &-heading {
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: lighter;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.7rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        font-size: 1.3rem;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__email {
+    margin-bottom: 3rem;
+
+    &-heading {
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: lighter;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.7rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__phone {
+    margin-bottom: 3rem;
+
+    &-heading {
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: lighter;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.7rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-number {
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    a:hover,
+    a:active {
+      transform: translateY(-3px) scale(1.1);
+    }
+
+    a:focus {
+      outline: none;
+    }
+
+    &-facebook {
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      margin-right: 0.5rem;
+      background-color: $color-facebook;
+      -webkit-mask-image: url(../img/facebook.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/facebook.svg);
+      mask-size: cover;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    &-twitter {
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      margin-right: 0.5rem;
+      background-color: $color-twitter;
+      -webkit-mask-image: url(../img/twitter.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/twitter.svg);
+      mask-size: cover;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    &-instagram {
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      background-image: linear-gradient(
+        to bottom left,
+        $color-instagram-1,
+        $color-instagram-2,
+        $color-instagram-3
+      );
+      -webkit-mask-image: url(../img/instagram.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/instagram.svg);
+      mask-size: cover;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+
+      @media only screen and (max-width: 17.5em) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    // svg {
+    //   fill: var(--color-pink-primary);
+    //   width: 2rem;
+    //   height: 2rem;
+    //   margin-right: 0.5rem;
+
+    //   @media only screen and (max-width: $bp-large) {
+    //     width: 1.7rem;
+    //     height: 1.7rem;
+    //   }
+
+    //   @media only screen and (max-width: 17.5em) {
+    //     width: 1.5rem;
+    //     height: 1.5rem;
+    //   }
+    // }
+  }
+}

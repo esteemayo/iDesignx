@@ -1,0 +1,383 @@
+// home
+.contact {
+  background-color: #f9f9f9;
+  grid-column: col-start 5 / col-end 8;
+  margin: 8rem;
+  transform: translateY(-28rem);
+  padding: 3rem;
+
+  box-shadow: 0 2rem 4rem rgba(00, 00, 00, 0.25);
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 1rem;
+  align-content: start;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: 5 / 6;
+    grid-column: center-start / center-end;
+    transform: translate(0);
+    box-shadow: none;
+    margin: 3rem 0;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    margin: 0 0 1rem 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-column: full-start / full-end;
+  }
+
+  &__heading {
+    font-size: 3rem !important;
+
+    @media only screen and (max-width: 18.75em) {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: var(--color--blue);
+  }
+}
+
+// print
+.print__contact {
+  grid-column: full-start / full-end;
+  margin: 8rem 0;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black-light, 0.7),
+      rgba($color-black-dark, 0.7)
+    ),
+    url(../img/contact-1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 4rem 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin: 0;
+  }
+
+  &-text {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 3rem;
+    color: var(--color-white);
+    text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.6rem;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &-btn {
+    grid-row: 3 / -1;
+    grid-column: 2 / span 2;
+    justify-self: center;
+    align-self: start;
+  }
+}
+
+// design
+.design__contact {
+  background-color: var(--color-white);
+  grid-column: full-start / full-end;
+  padding: 4rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 2rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 3rem 0;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    padding: 2rem 0;
+  }
+
+  &-text {
+    grid-row: 2 / 3;
+    grid-column: 2 / span 2;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-largest-x1),
+      (min-width: $bp-largest-x1) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: 62.5em) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-btn {
+    grid-row: 3 / -1;
+    grid-column: 2 / span 2;
+    justify-self: center;
+    align-self: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1rem 2.8rem !important;
+      font-size: 1.4rem !important;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      font-size: 1.25rem !important;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 2.4rem !important;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.2rem !important;
+      padding: 1rem 2.1rem !important;
+    }
+  }
+}
+
+// contact
+.contact-form {
+  background-color: #f9f9f9;
+  grid-column: col-start 1 / col-end 4;
+
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.25);
+  margin: 10rem 0;
+  padding: 4.5rem;
+  border-radius: 1rem;
+
+  display: grid;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-row: 4 / 5;
+    grid-column: center-start / center-end;
+
+    box-shadow: none;
+    margin: 5rem 0;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    grid-column: full-start / full-end;
+    margin: 2.5rem 0;
+    border-radius: 0;
+  }
+
+  &__heading-tertiary {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 21.25em) {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 17.5em) {
+      font-size: 1.5rem;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__btn {
+    border: none;
+    display: block;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    color: var(--color-white);
+    background-color: var(--color-pink-light);
+    font-size: 2rem;
+    border-radius: 3px;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      var(--color-purple) 50%
+    );
+    background-size: 230%;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 1rem 1.7rem;
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: 17.5em) {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      animation: pulsate 1s infinite;
+      background-position: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// about
+.about-contact {
+  grid-column: center-start / center-end;
+  margin: 7rem 0;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: full-start / full-end;
+    margin: 5rem 2rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    margin: 3rem 1rem;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: start;
+
+  @media only screen and (max-width: 20.63em) {
+    row-gap: 1.5rem;
+
+    margin: 2.5rem 0;
+  }
+
+  &__text {
+    grid-column: 1 / span 4;
+
+    font-size: 3.2rem;
+    line-height: 1;
+
+    @media only screen and (max-width: 62.5em) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      font-size: 2.3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: var(--default-font-size);
+      grid-row: 1 / 2;
+    }
+
+    @media only screen and (max-width: 20.63em) {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+
+    span {
+      display: block;
+
+      @media only screen and (max-width: 20.63em) {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__btn {
+    grid-column: 5 / -1;
+    justify-self: stretch;
+    text-align: center;
+
+    @media only screen and (max-width: 43.75em) {
+      font-size: 1.5rem !important;
+      padding: 0.7rem 1.8rem !important;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.3rem !important;
+      justify-self: center;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      grid-column: 4 / 6;
+      grid-row: 1 / 2;
+      justify-self: end;
+
+      font-size: 1rem !important;
+    }
+
+    @media only screen and (max-width: 20.63em) {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+  }
+}

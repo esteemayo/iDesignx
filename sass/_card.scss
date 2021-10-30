@@ -1,0 +1,42 @@
+.cards {
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 10rem 0;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
+
+  @media only screen and (max-width: 31.25em) {
+    grid-template-columns: none;
+    row-gap: 1rem;
+  }
+
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: var(--color-pink-primary);
+
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+    transition: all 0.2s;
+
+    &:hover {
+      fill: var(--color-pink-light);
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

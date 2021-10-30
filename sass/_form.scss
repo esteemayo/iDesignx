@@ -1,0 +1,190 @@
+.form {
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: var(--color-gray-dark-2);
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+    caret-color: var(--color-pink-primary);
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid var(--color-green);
+      box-shadow: 0 1rem 2rem rgba(00, 00, 00, 0.1);
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid var(--color-orange-dark);
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-gray-dark-2);
+    }
+  }
+
+  &__photo-upload {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  &__upload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__upload:focus + label {
+    outline: 3px solid var(--color-pink-light);
+    outline-offset: 3px;
+  }
+
+  &__upload + label {
+    color: var(--color-pink-light);
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-pink-light);
+    padding: 3px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  &__upload + label:hover {
+    background-color: var(--color-pink-light);
+    color: var(--color-white);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: var(--color-white);
+    color: var(--color-gray-dark-2);
+    padding: 1.5rem 2rem;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 2px;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid var(--color-green);
+      box-shadow: 0 1rem 2rem rgba(00, 00, 00, 0.1);
+    }
+
+    option {
+      font-size: 1.6rem;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__textarea {
+    font-size: 1.5rem;
+    font-family: inherit;
+    width: 100%;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 3px solid transparent;
+    color: var(--color-gray-dark-2);
+    padding: 2rem 3rem;
+    caret-color: var(--color-pink-primary);
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid var(--color-green);
+      box-shadow: 0 1rem 2rem rgba(00, 00, 00, 0.1);
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid var(--color-orange-dark);
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-gray-dark-2);
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+
+    &--light {
+      color: var(--color-white);
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__textarea:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 1.5rem 7rem;
+    color: var(--color-white);
+    background-color: var(--color-pink-dark);
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1.3rem 5rem;
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 5rem;
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      background-color: var(--color-pink-primary);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

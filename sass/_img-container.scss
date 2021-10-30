@@ -1,0 +1,33 @@
+.img-container {
+  background-color: var(--color-white);
+  grid-column: full-start / col-end 4;
+
+  display: grid;
+  grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
+  grid-template-rows: 0.5fr repeat(6, 1fr) 0.5fr;
+
+  img {
+    grid-row: 2 / 8;
+    grid-column: 1 / 8;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+      visibility: hidden;
+      z-index: -1;
+    }
+  }
+}
+
+// about
+.about-img {
+  grid-column: full-start / full-end;
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
