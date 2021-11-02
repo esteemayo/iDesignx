@@ -30,6 +30,13 @@
 .btn:active {
   opacity: 0.9;
   transform: translateY(-3px);
+  background-image: linear-gradient(
+    to left bottom,
+    var(--color-pink-dark),
+    var(--color-pink-light),
+    var(--color-orange-dark),
+    var(--color-orange-light)
+  );
   box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
 }
 
