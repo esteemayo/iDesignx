@@ -115,6 +115,7 @@
     color: var(--color-gray-dark-2);
     padding: 2rem 3rem;
     caret-color: var(--color-pink-primary);
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
