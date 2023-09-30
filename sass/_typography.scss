@@ -86,12 +86,12 @@
       font-size: 1.2rem;
     }
 
-    @media only screen and(max-width:$bp-smallest) {
+    @media only screen and(max-width: $bp-smallest) {
       font-size: 1rem;
       letter-spacing: 2px;
     }
 
-    @media only screen and(max-width:18.75em) {
+    @media only screen and(max-width: 18.75em) {
       letter-spacing: 1px;
     }
   }
