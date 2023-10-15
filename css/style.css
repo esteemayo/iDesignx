@@ -1098,12 +1098,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(-webkit-min-content, 25rem));
   grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
 }
 .gallery__img {
-  width: 100%;
-  height: 100%;
+  width: 25rem;
+  height: 25rem;
   -o-object-fit: cover;
   object-fit: cover;
   display: block;
@@ -1755,14 +1755,18 @@ body {
       -webkit-min-content
     );
   grid-template-rows: repeat(2, min-content) 80vh repeat(5, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(-webkit-min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 50em) {
   .container-home {
@@ -1792,14 +1796,18 @@ body {
       -webkit-min-content
     );
   grid-template-rows: repeat(2, min-content) 70vh repeat(3, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(-webkit-min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 50em) {
   .container-prints {
@@ -1821,14 +1829,18 @@ body {
       -webkit-min-content
     );
   grid-template-rows: repeat(2, min-content) 80vh 40vw repeat(3, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(-webkit-min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 64em) {
   .container-design {
@@ -1858,14 +1870,18 @@ body {
       -webkit-min-content
     );
   grid-template-rows: repeat(2, min-content) 60vh repeat(2, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(-webkit-min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 56.25em) {
   .container-contact {
@@ -1898,14 +1914,18 @@ body {
       2,
       min-content
     );
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(-webkit-min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 56.25em) {
   .container-about {
