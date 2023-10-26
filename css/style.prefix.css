@@ -3213,23 +3213,24 @@ body {
 }
 
 .image-gallery {
+  padding: 10rem 3rem;
+  padding-bottom: 0;
+
+  grid-column: full-start / full-end;
   display: grid;
-  grid-template-rows: 70vh repeat(2, min-content);
-  grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
-      8,
-      [col-start] minmax(min-content, 15rem) [col-end]
-    )
-    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: repeat(7, 5vw);
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1.5rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 50em) {
   .image-gallery {
-    grid-template-rows: 60vh;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 25em) {
   .image-gallery {
-    grid-template-rows: 40vh;
+    padding: 3rem;
   }
 }
 
