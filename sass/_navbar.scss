@@ -8,15 +8,11 @@
   column-gap: 5rem;
   align-items: center;
 
-  @media only screen and (max-width: $bp-large) {
-    grid-template-rows: repeat(2, min-content);
-    grid-template-columns: repeat(2, min-content) 1fr repeat(2, min-content);
+  @media only screen and (max-width: 48em) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     column-gap: 0;
-  }
-
-  @media only screen and (max-width: $bp-smallest) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 1rem;
   }
 
   &__logo-box {
@@ -97,22 +93,8 @@
   &__btn {
     justify-self: end;
 
-    @media only screen and (max-width: $bp-large) {
-      grid-column: 2 / -1;
-      justify-self: end;
-    }
-
-    @media only screen and (max-width: 33.75em) {
-      justify-self: end;
-    }
-
-    @media only screen and (max-width: 31.25em) {
-      grid-column: 2 / -1;
-      justify-self: end;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-      justify-self: end;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
     }
 
     border: none;
