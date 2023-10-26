@@ -140,6 +140,27 @@
   }
 }
 
+// gallery
+.header-gallery {
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  color: var(--clr-white);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black-light, 0.7),
+      rgba($color-black-dark, 0.7)
+    ),
+    url('/img/gallery-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 // design
 .header__design {
   grid-column: full-start / full-end;
