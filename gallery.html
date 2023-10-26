@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>iDesignx | Gallery</title>
+  </head>
+  <body class="container-gallery">
+    <div class="info">
+      <div class="info__phone">
+        <svg class="info__icon">
+          <use xlink:href="img/sprite.svg#icon-phone"></use>
+        </svg>
+        +2348136119251
+      </div>
+      <div class="info__email">
+        <svg class="info__icon">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        esteemdesign19@gmail.com
+      </div>
+      <div class="info__logos">
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__logo-box">
+        <a href="/index.html" class="nav__logo-link">
+          <img src="img/logo.png" alt="Logo" class="nav__logo" />
+        </a>
+      </div>
+      <ul class="nav__item">
+        <li class="nav__list nav__list--active">
+          <a href="/index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="/design.html" class="nav__link">Design</a>
+        </li>
+        <li class="nav__list">
+          <a href="/prints.html" class="nav__link">Prints</a>
+        </li>
+        <li class="nav__list"><a href="#" class="nav__link">Gallery</a></li>
+        <li class="nav__list">
+          <a href="/about.html" class="nav__link">About</a>
+        </li>
+        <li class="nav__list">
+          <a href="/contact.html" class="nav__link">Contact</a>
+        </li>
+      </ul>
+      <button class="nav__btn">Upload your design</button>
+    </nav>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a href="/about.html" class="footer__nav-link">About us</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Product</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Gallery</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Awards</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Help</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="/contact.html" class="footer__nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <p class="footer__copyright">
+        &copy; Copyright <span class="footer__copyright-year"></span> by
+        Emmanuel Adebayo. All rights reserved. We are a young company always
+        looking for new and creative ideas to help you with our products in your
+        everyday work.
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.querySelector('.footer__copyright-year').innerHTML = year;
+  </script>
+</html>
