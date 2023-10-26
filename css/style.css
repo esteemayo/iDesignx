@@ -3148,3 +3148,7 @@ body {
     padding: 3rem;
   }
 }
+.image-gallery__container {
+  width: 27rem;
+  height: 14rem;
+}

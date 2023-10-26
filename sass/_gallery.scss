@@ -66,4 +66,16 @@
   @media only screen and (max-width: 25em) {
     padding: 3rem;
   }
+
+  &__container {
+    width: 27rem;
+    height: 14rem;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
 }
