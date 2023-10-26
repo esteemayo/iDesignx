@@ -1879,6 +1879,27 @@ body {
   }
 }
 
+.container-gallery {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 70vh repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 37.5em) {
+  .container-gallery {
+    grid-template-rows: 60vh;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .container-gallery {
+    grid-template-rows: 40vh;
+  }
+}
+
 .container-design {
   background-color: #f9f9f9;
   display: grid;
